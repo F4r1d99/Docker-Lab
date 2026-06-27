@@ -22,3 +22,13 @@ variable "instance_type" {
   type    = string
   default = "t3.micro"
 }
+
+variable "iam_role_name" {
+  type    = string
+  default = "ec2-ssm-role"
+}
+
+variable "instance_profile_name" {
+  type    = string
+  default = "ec2-ssm-profile"
+}
