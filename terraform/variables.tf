@@ -32,3 +32,8 @@ variable "instance_profile_name" {
   type    = string
   default = "ec2-ssm-profile"
 }
+
+variable "key_name" {
+  description = "EC2 Key Pair name for SSH access"
+  type        = string
+}

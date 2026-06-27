@@ -26,6 +26,8 @@ module "compute" {
   subnet_id         = module.networking.public_subnet_id
   security_group_id = module.security.sg_id
 
+  key_name = var.key_name
+
   instance_profile_name = module.security.instance_profile_name
 
   instance_type     = var.instance_type
